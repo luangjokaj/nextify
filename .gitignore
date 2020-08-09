@@ -1,0 +1,16 @@
+logs
+*.log*
+pids
+*.pid
+*.seed
+lib-cov
+coverage
+node_modules
+.vscode
+.DS_Store
+.next
+scratch.js
+notes.md
+.now
+.env
+.vercel
