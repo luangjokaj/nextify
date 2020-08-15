@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "cherry-grid";
 import { Page } from "../components/Pages";
-import "../assets/css/styles.css";
 
 const coverImg = "https://via.placeholder.com/1280x670";
 
