@@ -9,10 +9,8 @@
 		"dev": "node server.js",
 		"build": "next build",
 		"start": "next start",
-		"lint:css": "stylelint src/**/*.css",
-		"lint:js": "eslint src/**/*.js",
+		"lint": "eslint src/**/*.js",
 		"lint:fix": "eslint src/**/*.js --fix",
-		"lint": "npm run lint:css && npm run lint:js",
 		"format": "prettier --write \"./**/*.{js,json,ts,tsx}\" \"!.node_modules/**\" \"!.next/**\"",
 		"analyze": "ANALYZE=true next build",
 		"analyze:server": "BUNDLE_ANALYZE=server next build",
@@ -20,17 +18,19 @@
 	},
 	"dependencies": {
 		"@emotion/babel-plugin": "^11.0.0",
+		"@emotion/eslint-plugin": "^11.0.0",
 		"@emotion/react": "^11.1.1",
 		"@next/bundle-analyzer": "^10.0.2",
 		"babel-eslint": "^10.1.0",
 		"eslint": "^7.13.0",
+		"eslint-plugin-prettier": "^3.1.4",
 		"eslint-plugin-react": "^7.21.5",
+		"eslint-plugin-react-hooks": "^4.2.0",
 		"express": "^4.17.1",
 		"next": "^10.0.2",
 		"next-compose-plugins": "^2.2.1",
 		"prettier": "^2.1.2",
 		"react": "^17.0.1",
-		"react-dom": "^17.0.1",
-		"stylelint": "^13.8.0"
+		"react-dom": "^17.0.1"
 	}
 }
