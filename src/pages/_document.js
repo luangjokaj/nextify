@@ -12,7 +12,7 @@ class MyDocument extends Document {
 		return (
 			<Html>
 				<Head>
-					<script src="/chrome-fix.js" defer />
+					<script src="/chrome-fix.js" />
 				</Head>
 				<body>
 					<Main />
