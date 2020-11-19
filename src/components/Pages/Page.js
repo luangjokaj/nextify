@@ -1,3 +1,4 @@
+import React from "react";
 import Head from "next/head";
 import { withRouter } from "next/router";
 
@@ -23,7 +24,7 @@ const Page = ({
 	children,
 	router,
 }) => (
-	<>
+	<React.Fragment>
 		<Head>
 			<meta httpEquiv="" content="IE=edge" />
 			<meta
@@ -55,7 +56,7 @@ const Page = ({
 			<title>{title + " - Nextify"}</title>
 		</Head>
 		{children}
-	</>
+	</React.Fragment>
 );
 
 const PageWithRouter = withRouter(Page);
