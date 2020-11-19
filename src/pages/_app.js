@@ -1,12 +1,17 @@
 import { withRouter, useRouter } from "next/router";
-import "../assets/css/styles.css";
+import { ThemeProvider, css } from "@emotion/react";
+import { globalStyles } from "../assets/styles/globalStyles";
+import { theme } from "../assets/styles/theme";
 
 function App({ Component, pageProps, router }) {
 	const { query } = useRouter();
 
 	return (
 		<>
-			<Component {...pageProps} />
+			{globalStyles}
+			<ThemeProvider theme={theme}>
+				<Component {...pageProps} />
+			</ThemeProvider>
 		</>
 	);
 }

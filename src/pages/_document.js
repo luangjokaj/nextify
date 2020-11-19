@@ -11,9 +11,7 @@ class MyDocument extends Document {
 	render() {
 		return (
 			<Html>
-				<Head>
-					<script src="/chrome-fix.js" />
-				</Head>
+				<Head />
 				<body>
 					<Main />
 					<NextScript />

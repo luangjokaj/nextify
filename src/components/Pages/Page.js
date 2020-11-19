@@ -1,20 +1,14 @@
+import React from "react";
 import Head from "next/head";
 import { withRouter } from "next/router";
 
-export const favicon =
-	"https://via.placeholder.com/32x32";
-export const icon120 =
-	"https://via.placeholder.com/120x120";
-export const icon152 =
-	"https://via.placeholder.com/152x152";
-export const icon180 =
-	"https://via.placeholder.com/180x180";
-export const icon192 =
-	"https://via.placeholder.com/192x192";
-export const icon512 =
-	"https://via.placeholder.com/512x512";
-export const preview =
-	"https://via.placeholder.com/1280x670";
+export const favicon = "https://via.placeholder.com/32x32";
+export const icon120 = "https://via.placeholder.com/120x120";
+export const icon152 = "https://via.placeholder.com/152x152";
+export const icon180 = "https://via.placeholder.com/180x180";
+export const icon192 = "https://via.placeholder.com/192x192";
+export const icon512 = "https://via.placeholder.com/512x512";
+export const preview = "https://via.placeholder.com/1280x670";
 
 const Page = ({
 	title = "Nextify",
@@ -23,7 +17,7 @@ const Page = ({
 	children,
 	router,
 }) => (
-	<>
+	<React.Fragment>
 		<Head>
 			<meta httpEquiv="" content="IE=edge" />
 			<meta
@@ -55,7 +49,7 @@ const Page = ({
 			<title>{title + " - Nextify"}</title>
 		</Head>
 		{children}
-	</>
+	</React.Fragment>
 );
 
 const PageWithRouter = withRouter(Page);
