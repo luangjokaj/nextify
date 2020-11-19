@@ -5,7 +5,6 @@ const containerStyles = (theme) => css`
 	margin: auto;
 	padding: 0 20px;
 	background: ${theme.colors.primary};
-	color: red;
 `;
 
 export { containerStyles };
