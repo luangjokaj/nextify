@@ -1,4 +1,5 @@
 import { Global, css } from "@emotion/react";
+import { theme } from "./theme";
 
 const globalStyles = (
 	<Global
@@ -7,7 +8,7 @@ const globalStyles = (
 			body {
 				padding: 0;
 				margin: 0;
-				background: papayawhip;
+				background: ${theme.colors.primary};
 				min-height: 100%;
 				font-family: Helvetica, Arial, sans-serif;
 				font-size: 24px;
