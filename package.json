@@ -6,7 +6,7 @@
 	"author": "Luan Gjokaj",
 	"license": "MIT",
 	"scripts": {
-		"dev": "node server.js",
+		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "eslint src/**/*.js",

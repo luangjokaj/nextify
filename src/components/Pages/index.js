@@ -1,10 +1,9 @@
 export {
 	Page,
-	favicon,
-	icon120,
-	icon152,
-	icon180,
-	icon192,
-	icon512,
+	appleTouchIcon,
+	favIcon32,
+	favIcon16,
+	favIcon,
+	safariPinnedTab,
 	preview,
 } from "./Page";

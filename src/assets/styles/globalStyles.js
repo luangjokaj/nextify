@@ -8,7 +8,7 @@ const globalStyles = (
 			body {
 				padding: 0;
 				margin: 0;
-				background: ${theme.colors.primary};
+				background: ${theme.colors.light};
 				min-height: 100%;
 				font-family: Helvetica, Arial, sans-serif;
 				font-size: 24px;

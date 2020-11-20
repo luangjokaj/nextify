@@ -1,6 +1,7 @@
 const theme = {
 	colors: {
-		primary: "papayawhip",
+		dark: "#000",
+		light: "#FFF",
 	},
 };
 
