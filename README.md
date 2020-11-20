@@ -1,5 +1,8 @@
 
 # ![preview](https://nextify.s3-eu-west-1.amazonaws.com/img/logo.svg)
+**Technology:**
+- ⚛ [Next.js](https://nextjs.org/)
+- 👩‍🎤 [Emotion (CSS in JS)](https://emotion.sh/)
 ## Install dependencies
 ```
 npm install
