@@ -4,8 +4,6 @@ import { Page } from "../components/Pages";
 import { Container } from "../components/Layout";
 import { Logo } from "../assets/svg/logo";
 
-const coverImg = "https://via.placeholder.com/1280x670";
-
 function Index({ posts = [] }) {
 	return (
 		<Page title="Home" description="Hello world">
