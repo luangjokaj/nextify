@@ -1,4 +1,5 @@
 import { Global, css } from "@emotion/react";
+import { Breakpoints, mq } from "./mq";
 import { theme } from "./theme";
 
 const globalStyles = (
@@ -12,6 +13,10 @@ const globalStyles = (
 				min-height: 100%;
 				font-family: Helvetica, Arial, sans-serif;
 				font-size: 24px;
+
+				${mq(Breakpoints.lg)} {
+					clear: both;
+				}
 			}
 		`}
 	/>
