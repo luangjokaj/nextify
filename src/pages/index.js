@@ -2,7 +2,7 @@ import React from "react";
 import { css } from "@emotion/react";
 import { Page } from "../components/Pages";
 import { Container } from "../components/Layout";
-import { Logo } from "../assets/svg/logo";
+import { Logo } from "../assets/svg/Logo";
 
 function Index({ posts = [] }) {
 	return (
