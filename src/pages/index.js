@@ -23,7 +23,7 @@ function Index({ posts = [] }) {
 						transition: all 0.3s ease;
 
 						&:hover {
-							background-color: rgba(0, 0, 0, 0.5);
+							background-color: ${theme.colors.primary};
 						}
 					`}
 				>
