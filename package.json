@@ -9,6 +9,7 @@
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
+		"export": "next export",
 		"lint": "eslint src/**/*.js",
 		"lint:fix": "eslint src/**/*.js --fix",
 		"format": "prettier --write \"./**/*.{js,json,ts,tsx}\" \"!.node_modules/**\" \"!.next/**\"",
