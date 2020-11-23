@@ -5,13 +5,14 @@ import { theme } from "./theme";
 const globalStyles = (
 	<Global
 		styles={css`
-			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
 
 			html,
 			body {
 				margin: 0;
 				padding: 0;
 				min-height: 100%;
+				overflow-x: hidden;
 			}
 
 			body {
@@ -57,6 +58,9 @@ const globalStyles = (
 			}
 
 			hr {
+				background: none;
+				border: none;
+				border-bottom: solid 1px ${theme.colors.grayLight};
 				box-sizing: content-box;
 				height: 0;
 				overflow: visible;
@@ -234,11 +238,6 @@ const globalStyles = (
 
 			figure {
 				margin: 0;
-			}
-
-			hr {
-				border: none;
-				border-bottom: solid 1px ${theme.colors.grayLight};
 			}
 
 			fieldset {

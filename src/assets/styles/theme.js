@@ -3,8 +3,8 @@ const theme = {
 		maxWidth: "1000px",
 		paddingTopBody: { mobile: "0", desktop: "0" },
 		marginContainer: { mobile: "20px", desktop: "20px" },
-		marginRow: { mobile: "-10px", desktop: "-10px" },
-		gutterCol: { mobile: "10px", desktop: "10px" },
+		marginRow: { default: "-10px", medium: "-30px", big: "-50px" },
+		gutterCol: { default: "10px", medium: "30px", big: "50px" },
 		printMargin: {
 			top: "15mm",
 			bottom: "15mm",
@@ -13,7 +13,6 @@ const theme = {
 		},
 	},
 	colors: {
-		tertiary: "#111827",
 		primary: "#0076FF",
 		secondary: "#4656DA",
 		tertiary: "#EEF1F8",
@@ -67,11 +66,11 @@ const theme = {
 		h1: {
 			size: {
 				mobile: "38px",
-				desktop: "70px",
+				desktop: "50px",
 			},
 			lineheight: {
-				mobile: "1.35",
-				desktop: "76px",
+				mobile: "40px",
+				desktop: "54px",
 			},
 		},
 		h2: {
@@ -90,7 +89,7 @@ const theme = {
 				desktop: "28px",
 			},
 			lineheight: {
-				mobile: "1.35",
+				mobile: "28px",
 				desktop: "36px",
 			},
 		},
@@ -136,12 +135,12 @@ const theme = {
 		},
 		lead: {
 			size: {
-				mobile: "18px",
-				desktop: "20px",
+				mobile: "16px",
+				desktop: "18px",
 			},
 			lineheight: {
 				mobile: "24px",
-				desktop: "28px",
+				desktop: "26px",
 			},
 		},
 		text: {

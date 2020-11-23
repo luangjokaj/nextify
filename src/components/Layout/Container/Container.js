@@ -1,10 +1,16 @@
 import React from "react";
-import { useTheme } from "@emotion/react";
 import * as styles from "./Container.styles";
 
-function Container({ children, fluid }) {
-	const theme = useTheme();
-	return <div css={styles.containerStyles(theme, fluid)}>{children}</div>;
+function Container({ children, fluid, className, align }) {
+	return (
+		<div
+			css={(theme) => styles.containerStyles(theme, fluid, align)}
+			className={className}
+			data-container
+		>
+			{children}
+		</div>
+	);
 }
 
 export { Container };
