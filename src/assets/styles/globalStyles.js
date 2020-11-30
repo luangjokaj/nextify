@@ -94,7 +94,13 @@ const globalStyles = (
 			}
 
 			small {
-				font-size: 80%;
+				font-size: ${theme.sizes.small.size.mobile};
+				line-height: ${theme.sizes.small.lineheight.mobile};
+
+				${mq(Breakpoints.lg)} {
+					font-size: ${theme.sizes.small.size.desktop};
+					line-height: ${theme.sizes.small.lineheight.desktop};
+				}
 			}
 
 			sub,
