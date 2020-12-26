@@ -208,6 +208,7 @@ const globalStyles = (
 				-webkit-appearance: button;
 				font: inherit;
 			}
+
 			details {
 				display: block;
 			}
