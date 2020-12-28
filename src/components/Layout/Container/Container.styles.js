@@ -1,7 +1,7 @@
 import { css } from "@emotion/react";
 import { mq, Breakpoints } from "../../../assets/styles/mq";
 
-const containerStyles = (theme, fluid, align) => css`
+const containerStyles = (theme, fluid, textAlign) => css`
 	max-width: 1400px;
 	margin: auto;
 	padding: 0 ${theme.spacing.marginContainer.mobile};
@@ -16,17 +16,17 @@ const containerStyles = (theme, fluid, align) => css`
 		widht: 100%;
 	`}
 
-	${align === "right" &&
+	${textAlign === "right" &&
 	css`
 		text-align: right;
 	`}
 
-	${align === "left" &&
+	${textAlign === "left" &&
 	css`
 		text-align: left;
 	`}
 
-	${align === "center" &&
+	${textAlign === "center" &&
 	css`
 		text-align: center;
 	`}
