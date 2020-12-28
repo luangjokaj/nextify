@@ -138,6 +138,39 @@ const headerStyles = (theme, size, h) => css`
 			line-height: ${theme.sizes.h6.lineheight.desktop};
 		}
 	`}
+
+	${size === "hero1" &&
+	css`
+		font-size: ${theme.sizes.hero1.size.mobile};
+		line-height: ${theme.sizes.hero1.lineheight.mobile};
+
+		${mq(Breakpoints.lg)} {
+			font-size: ${theme.sizes.hero1.size.desktop};
+			line-height: ${theme.sizes.hero1.lineheight.desktop};
+		}
+	`}
+
+	${size === "hero2" &&
+	css`
+		font-size: ${theme.sizes.hero2.size.mobile};
+		line-height: ${theme.sizes.hero2.lineheight.mobile};
+
+		${mq(Breakpoints.lg)} {
+			font-size: ${theme.sizes.hero2.size.desktop};
+			line-height: ${theme.sizes.hero2.lineheight.desktop};
+		}
+	`}
+
+	${size === "hero3" &&
+	css`
+		font-size: ${theme.sizes.hero3.size.mobile};
+		line-height: ${theme.sizes.hero3.lineheight.mobile};
+
+		${mq(Breakpoints.lg)} {
+			font-size: ${theme.sizes.hero3.size.desktop};
+			line-height: ${theme.sizes.hero3.lineheight.desktop};
+		}
+	`}
 `;
 
 export { headerStyles };
