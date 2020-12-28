@@ -183,6 +183,16 @@ const theme = {
 				desktop: "36px",
 			},
 		},
+		button: {
+			size: {
+				mobile: "14px",
+				desktop: "16px",
+			},
+			lineheight: {
+				mobile: "24px",
+				desktop: "28px",
+			},
+		},
 		print: {
 			size: "10pt",
 			lineheight: "1",
