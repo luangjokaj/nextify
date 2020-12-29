@@ -71,10 +71,6 @@ const globalStyles = (
 				font-size: 1em;
 			}
 
-			a {
-				background-color: transparent;
-			}
-
 			abbr[title] {
 				border-bottom: none;
 				text-decoration: underline;
@@ -234,11 +230,12 @@ const globalStyles = (
 			}
 
 			a {
+				background-color: transparent;
 				color: ${theme.colors.primary};
 
 				@media (hover: hover) {
 					&:hover {
-						color: ${theme.colors.secondary};
+						color: ${theme.colors.primaryDark};
 					}
 				}
 			}
@@ -271,7 +268,7 @@ const globalStyles = (
 			strong,
 			b {
 				font-weight: 700;
-				color: ${theme.colors.primary};
+				color: ${theme.colors.dark};
 			}
 		`}
 	/>
