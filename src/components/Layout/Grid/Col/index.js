@@ -1,1 +1,0 @@
-export { Col } from "./Col";

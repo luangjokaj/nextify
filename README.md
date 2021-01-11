@@ -3,6 +3,7 @@
 **Technology:**
 - ⚛ [Next.js](https://nextjs.org/)
 - 👩‍🎤 [Emotion (CSS in JS)](https://emotion.sh/)
+- 🍒 [Cherry Design System](https://cherry.design)
 ## Install dependencies
 ```
 npm install
