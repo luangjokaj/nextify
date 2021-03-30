@@ -16,6 +16,6 @@
 		"types": ["@emotion/react/types/css-prop"],
 		"baseUrl": "./src"
 	},
-	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.jjs"],
+	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"],
 	"exclude": ["node_modules"]
 }
