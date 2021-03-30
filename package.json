@@ -1,5 +1,5 @@
 {
-	"name": "nextify",
+	"name": "create-nextify-app",
 	"version": "0.0.1",
 	"description": "React apps using Next.js and Emotion.",
 	"keywords": [
@@ -21,7 +21,7 @@
 	"repository": "https://github.com/luangjokaj/nextify",
 	"main": "./installer/index.js",
 	"bin": {
-		"nextify": "./installer/index.js"
+		"create-nextify-app": "./installer/index.js"
 	},
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
