@@ -1,5 +1,5 @@
 
-# ![preview](https://nextify.s3-eu-west-1.amazonaws.com/img/logo.svg)
+# ![Nextify Logo](https://nextify.s3-eu-west-1.amazonaws.com/img/nextify-repository-logo.svg#0)
 **Technology:**
 - ⚛ [Next.js](https://nextjs.org/)
 - 👩‍🎤 [Emotion (CSS in JS)](https://emotion.sh/)
