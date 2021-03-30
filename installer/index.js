@@ -27,8 +27,8 @@ program
 	const response = await prompts({
 		type: "confirm",
 		name: "value",
-		message: `Do you want to install ${chalk.white.bgGreen(
-			"🐺 GoPablo",
+		message: `Do you want to install ${chalk.white.bgBlue(
+			"⚡ Nextify",
 		)} in the current directory?\n${chalk.red(process.cwd())}`,
 	});
 
@@ -40,7 +40,7 @@ program
 					"You are running Node " +
 						currentNodeVersion +
 						".\n" +
-						"Install GoPablo requires Node 8 or higher. \n" +
+						"Install Nextify requires Node 8 or higher. \n" +
 						"Kindly, update your version of Node.",
 				),
 			);

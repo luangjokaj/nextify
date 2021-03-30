@@ -16,12 +16,12 @@ const printNextSteps = require("./printNextSteps.js");
 const version = require("../package.json").version;
 
 module.exports = () => {
-	// Init.
+	// Init
 	clearConsole();
 
-	let upstreamUrl = `https://raw.githubusercontent.com/luangjokaj/nextify/master`;
+	let upstreamUrl = `https://raw.githubusercontent.com/luangjokaj/nextify/v${version}`;
 
-	// Files.
+	// Files
 	const filesToDownload = [
 		`${upstreamUrl}/.babelrc`,
 		`${upstreamUrl}/.editorconfig`,
@@ -66,12 +66,12 @@ module.exports = () => {
 	const componentsFiles = ["index.ts", "Page.tsx"];
 	const pagesFiles = ["_app.tsx", "_document.tsx", "index.tsx"];
 
-	// Start.
+	// Start
 	console.log("\n");
 	console.log(
 		"📦 ",
 		chalk.black.bgYellow(
-			` Downloading 🐺 GoPablo files in: → ${chalk.bgGreen(
+			` Downloading ⚡ Nextify files in: → ${chalk.bgGreen(
 				` ${theDir} `,
 			)}\n`,
 		),
@@ -81,12 +81,12 @@ module.exports = () => {
 
 	const spinner = ora({ text: "" });
 	spinner.start(
-		`1. Creating 🐺 GoPablo files inside → ${chalk.black.bgWhite(
+		`1. Creating ⚡ Nextify files inside → ${chalk.black.bgWhite(
 			` ${theDir} `,
 		)}`,
 	);
 
-	// Download.
+	// Download
 	Promise.all(filesToDownload.map((x) => download(x, `${theCWD}`))).then(
 		async () => {
 			if (!fs.existsSync("src")) {
@@ -98,6 +98,7 @@ module.exports = () => {
 					"src/assets/svg",
 					"src/components",
 					"src/components/Page",
+					"src/pages",
 				]);
 			}
 
@@ -132,15 +133,19 @@ module.exports = () => {
 					(err) => handleError(err),
 				),
 			);
+			pagesFiles.map((x) =>
+				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/pages/${x}`, (err) =>
+					handleError(err),
+				),
+			);
 			spinner.succeed();
 
-			// The npm install.
+			// The npm install
 			spinner.start("2. Installing npm packages...");
-			// await execa('npm', ['install', '--silent']);
 			await execa("npm", ["install"]);
 			spinner.succeed();
 
-			// Done.
+			// Done
 			printNextSteps();
 		},
 	);
