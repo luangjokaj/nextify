@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import { withRouter } from "next/router";
 
 export const appleTouchIcon =
 	"https://nextify.s3-eu-west-1.amazonaws.com/meta/apple-touch-icon.png";
@@ -19,7 +18,6 @@ const Page = ({
 	description,
 	image = preview,
 	children,
-	router,
 }) => (
 	<React.Fragment>
 		<Head>
@@ -55,6 +53,4 @@ const Page = ({
 	</React.Fragment>
 );
 
-const PageWithRouter = withRouter(Page);
-
-export { PageWithRouter as Page };
+export { Page };

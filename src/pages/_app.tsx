@@ -1,11 +1,8 @@
-import { withRouter, useRouter } from "next/router";
-import { ThemeProvider, css } from "@emotion/react";
+import { ThemeProvider } from "@emotion/react";
 import { globalStyles } from "../assets/styles/globalStyles";
 import { theme } from "../assets/styles/theme";
 
-function App({ Component, pageProps, router }) {
-	const { query } = useRouter();
-
+function App({ Component, pageProps }) {
 	return (
 		<>
 			{globalStyles}
@@ -16,4 +13,4 @@ function App({ Component, pageProps, router }) {
 	);
 }
 
-export default withRouter(App);
+export default App;

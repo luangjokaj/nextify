@@ -4,7 +4,7 @@ import { Container, H1, Space } from "cherry-components";
 import { Page } from "../components/Pages";
 import { Logo } from "../assets/svg/Logo";
 
-function Index({ posts = [] }) {
+function Index() {
 	return (
 		<Page title="Home" description="Hello world">
 			<Container>
@@ -14,7 +14,7 @@ function Index({ posts = [] }) {
 				</H1>
 				<Space size={20} />
 				<div
-					css={(theme) => css`
+					css={(theme: any) => css`
 						padding: 32px;
 						background-color: ${theme.colors.dark};
 						color: ${theme.colors.light};
