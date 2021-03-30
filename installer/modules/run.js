@@ -19,64 +19,52 @@ module.exports = () => {
 	// Init.
 	clearConsole();
 
-	let upstreamUrl = `https://raw.githubusercontent.com/luangjokaj/gopablo/v${version}`;
+	let upstreamUrl = `https://raw.githubusercontent.com/luangjokaj/nextify/master`;
 
 	// Files.
 	const filesToDownload = [
 		`${upstreamUrl}/.babelrc`,
-		`${upstreamUrl}/.gitignore`,
-		`${upstreamUrl}/.stylelintrc`,
 		`${upstreamUrl}/.editorconfig`,
+		`${upstreamUrl}/.eslintrc`,
+		`${upstreamUrl}/.gitignore`,
+		`${upstreamUrl}/.prettierrc`,
 		`${upstreamUrl}/LICENSE`,
-		`${upstreamUrl}/README.md`,
-		`${upstreamUrl}/gulpfile.js`,
+		`${upstreamUrl}/next.config.js`,
+		`${upstreamUrl}/now.json`,
 		`${upstreamUrl}/installer/package.json`,
-		`${upstreamUrl}/server.js`,
+		`${upstreamUrl}/README.md`,
+		`${upstreamUrl}/tsconfig.json`,
 
-		`${upstreamUrl}/src/index.html`,
+		`${upstreamUrl}/public/robots.txt`,
+		`${upstreamUrl}/public/site.webmanifest`,
 
-		`${upstreamUrl}/src/etc/manifest.json`,
+		`${upstreamUrl}/src/assets/styles/globalStyles.tsx`,
+		`${upstreamUrl}/src/assets/styles/mq.ts`,
+		`${upstreamUrl}/src/assets/styles/theme.ts`,
 
-		`${upstreamUrl}/src/includes/content.html`,
-		`${upstreamUrl}/src/includes/footer.html`,
-		`${upstreamUrl}/src/includes/header.html`,
-		`${upstreamUrl}/src/includes/helmet.html`,
+		`${upstreamUrl}/src/assets/svg/Logo.tsx`,
 
-		`${upstreamUrl}/src/assets/css/gopablo.css`,
-		`${upstreamUrl}/src/assets/css/styles.css`,
+		`${upstreamUrl}/src/components/Page/index.ts`,
+		`${upstreamUrl}/src/components/Page/Page.tsx`,
 
-		`${upstreamUrl}/src/assets/img/favicon.ico`,
-		`${upstreamUrl}/src/assets/img/icon-192.png`,
-		`${upstreamUrl}/src/assets/img/icon-512.png`,
-		`${upstreamUrl}/src/assets/img/logo.svg`,
-
-		`${upstreamUrl}/src/assets/js/main.js`,
-		`${upstreamUrl}/src/assets/js/onclick.js`,
+		`${upstreamUrl}/src/pages/_app.tsx`,
+		`${upstreamUrl}/src/pages/_document.tsx`,
+		`${upstreamUrl}/src/pages/index.tsx`,
 	];
 
 	// Organise file structure
 	const dotFiles = [
 		".babelrc",
-		".gitignore",
-		".stylelintrc",
 		".editorconfig",
+		".eslintrc",
+		".gitignore",
+		".prettierrc",
 	];
-	const srcFiles = ["index.html"];
-	const etcFiles = ["manifest.json"];
-	const includesFiles = [
-		"content.html",
-		"footer.html",
-		"header.html",
-		"helmet.html",
-	];
-	const cssFiles = ["gopablo.css", "styles.css"];
-	const imgFiles = [
-		"favicon.ico",
-		"icon-192.png",
-		"icon-512.png",
-		"logo.svg",
-	];
-	const jsFiles = ["main.js", "onclick.js"];
+	const publicFiles = ["robots.txt", "site.webmanifest"];
+	const stylesFiles = ["globalStyles.tsx", "mq.ts", "theme.ts"];
+	const svgFiles = ["Logo.tsx"];
+	const componentsFiles = ["index.ts", "Page.tsx"];
+	const pagesFiles = ["_app.tsx", "_document.tsx", "index.tsx"];
 
 	// Start.
 	console.log("\n");
@@ -103,13 +91,13 @@ module.exports = () => {
 		async () => {
 			if (!fs.existsSync("src")) {
 				await execa("mkdir", [
+					"public",
 					"src",
-					"src/etc",
-					"src/includes",
 					"src/assets",
-					"src/assets/css",
-					"src/assets/img",
-					"src/assets/js",
+					"src/assets/styles",
+					"src/assets/svg",
+					"src/components",
+					"src/components/Page",
 				]);
 			}
 
@@ -118,41 +106,29 @@ module.exports = () => {
 					handleError(err),
 				),
 			);
-			srcFiles.map((x) =>
-				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/${x}`, (err) =>
+			publicFiles.map((x) =>
+				fs.rename(`${theCWD}/${x}`, `${theCWD}/public/${x}`, (err) =>
 					handleError(err),
 				),
 			);
-			etcFiles.map((x) =>
-				fs.rename(`${theCWD}/${x}`, `${theCWD}/src/etc/${x}`, (err) =>
-					handleError(err),
-				),
-			);
-			includesFiles.map((x) =>
+			stylesFiles.map((x) =>
 				fs.rename(
 					`${theCWD}/${x}`,
-					`${theCWD}/src/includes/${x}`,
+					`${theCWD}/src/assets/styles/${x}`,
 					(err) => handleError(err),
 				),
 			);
-			cssFiles.map((x) =>
+			svgFiles.map((x) =>
 				fs.rename(
 					`${theCWD}/${x}`,
-					`${theCWD}/src/assets/css/${x}`,
+					`${theCWD}/src/assets/svg/${x}`,
 					(err) => handleError(err),
 				),
 			);
-			imgFiles.map((x) =>
+			componentsFiles.map((x) =>
 				fs.rename(
 					`${theCWD}/${x}`,
-					`${theCWD}/src/assets/img/${x}`,
-					(err) => handleError(err),
-				),
-			);
-			jsFiles.map((x) =>
-				fs.rename(
-					`${theCWD}/${x}`,
-					`${theCWD}/src/assets/js/${x}`,
+					`${theCWD}/src/components/Page/${x}`,
 					(err) => handleError(err),
 				),
 			);

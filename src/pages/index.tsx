@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { Container, H1, Space } from "cherry-components";
-import { Page } from "../components/Pages";
+import { Page } from "../components/Page";
 import { Logo } from "../assets/svg/Logo";
 
 function Index() {
