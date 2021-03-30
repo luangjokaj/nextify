@@ -10,7 +10,7 @@
 		"build": "next build",
 		"start": "next start",
 		"export": "next export",
-		"lint": "eslint --cache --ext .js,.jsx,.ts,.tsx ./",
+		"lint": "eslint --ignore-path .gitignore --cache --ext .js,.jsx,.ts,.tsx ./",
 		"lint:fix": "npm run lint --fix",
 		"type-check": "tsc",
 		"type-watch": "tsc --watch",

@@ -1,8 +1,8 @@
 import React from "react";
 import { css } from "@emotion/react";
 import { Container, H1, Space } from "cherry-components";
-import { Page } from "@app/components/Pages";
-import { Logo } from "@app/assets/svg/Logo";
+import { Page } from "../components/Pages";
+import { Logo } from "../assets/svg/Logo";
 
 function Index() {
 	return (
