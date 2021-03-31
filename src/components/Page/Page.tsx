@@ -2,20 +2,21 @@ import React from "react";
 import Head from "next/head";
 
 export const appleTouchIcon =
-	"https://nextify.s3-eu-west-1.amazonaws.com/meta/apple-touch-icon.png";
+	"https://nextify.s3-eu-west-1.amazonaws.com/img/meta/180.png";
 export const favIcon32 =
-	"https://nextify.s3-eu-west-1.amazonaws.com/meta/favicon-32x32.png";
+	"https://nextify.s3-eu-west-1.amazonaws.com/img/meta/32.png";
 export const favIcon16 =
-	"https://nextify.s3-eu-west-1.amazonaws.com/meta/favicon-16x16.png";
+	"https://nextify.s3-eu-west-1.amazonaws.com/img/meta/16.png";
 export const favIcon =
-	"https://nextify.s3-eu-west-1.amazonaws.com/meta/favicon.ico";
+	"https://nextify.s3-eu-west-1.amazonaws.com/img/meta/favicon.ico";
 export const safariPinnedTab =
-	"https://nextify.s3-eu-west-1.amazonaws.com/meta/safari-pinned-tab.svg";
-export const preview = "https://nextjs.org/static/twitter-cards/home.jpg";
+	"https://nextify.s3-eu-west-1.amazonaws.com/img/meta/512.svg";
+export const preview =
+	"https://nextify.s3-eu-west-1.amazonaws.com/img/meta/preview.jpg";
 
 const Page = ({
 	title = "Nextify",
-	description,
+	description = "React apps using Next.js and Emotion.",
 	image = preview,
 	children,
 }) => (
@@ -45,7 +46,7 @@ const Page = ({
 			<link rel="manifest" href="/site.webmanifest" />
 			<link rel="mask-icon" href={safariPinnedTab} color="#000000" />
 			<link rel="shortcut icon" href={favIcon} />
-			<meta name="theme-color" content="#000" />
+			<meta name="theme-color" content="#000000" />
 
 			<title>{title + " - Nextify"}</title>
 		</Head>
