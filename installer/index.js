@@ -4,6 +4,7 @@
  * Check the node version if above 8 then run the app.
  *
  * Credits:
+ * Ahmad Awais - https://twitter.com/MrAhmadAwais/
  * Luan Gjokaj - https://twitter.com/luangjokaj/
  */
 
@@ -33,7 +34,7 @@ program
 	});
 
 	if (response.value) {
-		// If below Node 8.
+		// If below Node 8
 		if (8 > major) {
 			console.error(
 				chalk.red(
@@ -49,15 +50,15 @@ program
 
 		// Makes the script crash on unhandled rejections instead of silently
 		// ignoring them. In the future, promise rejections that are not handled will
-		// terminate the Node.js process with a non-zero exit code.
+		// terminate the Node.js process with a non-zero exit code
 		process.on("unhandledRejection", (err) => {
 			throw err;
 		});
 
 		/**
-		 * Run the entire program.
+		 * Run the entire program
 		 *
-		 * Runs all the functions with async/await.
+		 * Runs all the functions with async/await
 		 */
 		const run = require("./modules/run");
 		run();
