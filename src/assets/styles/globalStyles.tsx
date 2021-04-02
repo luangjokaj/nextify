@@ -5,8 +5,6 @@ import { theme } from "./theme";
 const globalStyles = (
 	<Global
 		styles={css`
-			@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap");
-
 			html,
 			body {
 				margin: 0;
@@ -75,11 +73,6 @@ const globalStyles = (
 				border-bottom: none;
 				text-decoration: underline;
 				text-decoration: underline dotted;
-			}
-
-			b,
-			strong {
-				font-weight: bolder;
 			}
 
 			code,
