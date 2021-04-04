@@ -1,6 +1,6 @@
 {
 	"name": "create-nextify-app",
-	"version": "0.0.2-2",
+	"version": "0.0.2-3",
 	"description": "React apps using Next.js and Emotion.",
 	"keywords": [
 		"nextjs",
@@ -47,7 +47,7 @@
 		"@typescript-eslint/eslint-plugin": "^4.20.0",
 		"@typescript-eslint/parser": "^4.20.0",
 		"babel-eslint": "^10.1.0",
-		"cherry-components": "^0.0.2-1",
+		"cherry-components": "^0.0.2-2",
 		"eslint": "^7.23.0",
 		"eslint-plugin-prettier": "^3.3.1",
 		"eslint-plugin-react": "^7.23.1",
