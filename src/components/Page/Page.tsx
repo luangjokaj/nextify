@@ -28,6 +28,8 @@ const Page = ({
 				content="width=device-width, initial-scale=1, maximum-scale=1"
 			/>
 			<meta name="description" content={description} />
+			<link rel="manifest" href="/site.webmanifest" />
+			<meta name="theme-color" content="#0370F3" />
 			<meta property="og:title" content={title + " - Nextify"} />
 			<meta property="og:description" content={description} />
 			<meta property="og:image" content={image} />
@@ -35,18 +37,15 @@ const Page = ({
 			<meta name="twitter:description" content={description} />
 			<meta name="twitter:title" content={title + " - Nextify"} />
 			<meta name="twitter:image" content={image} />
-
 			<link
 				rel="apple-touch-icon"
 				sizes="180x180"
 				href={appleTouchIcon}
 			/>
+			<link rel="mask-icon" href={safariPinnedTab} color="#0370F3" />
 			<link rel="icon" type="image/png" sizes="32x32" href={favIcon32} />
 			<link rel="icon" type="image/png" sizes="16x16" href={favIcon16} />
-			<link rel="manifest" href="/site.webmanifest" />
-			<link rel="mask-icon" href={safariPinnedTab} color="#000000" />
 			<link rel="shortcut icon" href={favIcon} />
-			<meta name="theme-color" content="#000000" />
 
 			<title>{title + " - Nextify"}</title>
 			<link rel="preconnect" href="https://fonts.gstatic.com" />
