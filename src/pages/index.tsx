@@ -16,18 +16,18 @@ function Index() {
 				<div
 					css={(theme: any) => css`
 						padding: 32px;
-						background-color: ${theme.colors.dark};
+						background-color: ${theme.colors.primary};
 						color: ${theme.colors.light};
-						font-size: 24px;
+						font-size: ${theme.sizes.h4.size.desktop};
 						border-radius: 4px;
 						transition: all 0.3s ease;
 
 						&:hover {
-							background-color: ${theme.colors.primary};
+							background-color: ${theme.colors.primaryDark};
 						}
 					`}
 				>
-					Hello world
+					Hello world.
 				</div>
 			</Container>
 		</Page>
