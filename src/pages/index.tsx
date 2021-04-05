@@ -19,7 +19,7 @@ function Index() {
 						background-color: ${theme.colors.primary};
 						color: ${theme.colors.light};
 						font-size: ${theme.sizes.h4.size.desktop};
-						border-radius: 4px;
+						border-radius: 12px;
 						transition: all 0.3s ease;
 
 						&:hover {
