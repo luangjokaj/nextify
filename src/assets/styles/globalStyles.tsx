@@ -10,13 +10,12 @@ const globalStyles = (
 				margin: 0;
 				padding: 0;
 				min-height: 100%;
-				overflow-x: hidden;
+				scroll-behavior: smooth;
 			}
 
 			body {
-				font-size-adjust: none;
 				-moz-osx-font-smoothing: grayscale;
-				-webkit-text-size-adjust: none;
+				-webkit-text-size-adjust: 100%;
 				-webkit-font-smoothing: antialiased;
 				font-family: ${theme.fonts.text};
 				font-size: ${theme.sizes.text.size.mobile};
@@ -41,18 +40,13 @@ const globalStyles = (
 				}
 
 				&::selection {
-					background: ${theme.colors.dark};
+					background: ${theme.colors.primary};
 					color: ${theme.colors.light};
 				}
 			}
 
 			main {
 				display: block;
-			}
-
-			h1 {
-				font-size: 2em;
-				margin: 0.67em 0;
 			}
 
 			hr {
@@ -62,24 +56,18 @@ const globalStyles = (
 				box-sizing: content-box;
 				height: 0;
 				overflow: visible;
+				margin: 10px 0;
 			}
 
-			pre {
-				font-family: monospace, monospace;
-				font-size: 1em;
-			}
-
-			abbr[title] {
-				border-bottom: none;
-				text-decoration: underline;
-				text-decoration: underline dotted;
-			}
-
+			pre,
 			code,
 			kbd,
 			samp {
 				font-family: monospace, monospace;
-				font-size: 1em;
+			}
+
+			pre {
+				border-radius: 12px;
 			}
 
 			small {
@@ -89,6 +77,18 @@ const globalStyles = (
 				${mq(Breakpoints.lg)} {
 					font-size: ${theme.sizes.small.size.desktop};
 					line-height: ${theme.sizes.small.lineheight.desktop};
+				}
+			}
+
+			blockquote {
+				margin: 10px 0;
+				padding: 0;
+				font-size: ${theme.sizes.blockquote.size.mobile};
+				line-height: ${theme.sizes.blockquote.lineheight.mobile};
+
+				${mq(Breakpoints.lg)} {
+					font-size: ${theme.sizes.blockquote.size.desktop};
+					line-height: ${theme.sizes.blockquote.lineheight.desktop};
 				}
 			}
 
@@ -108,112 +108,6 @@ const globalStyles = (
 				top: -0.5em;
 			}
 
-			img {
-				border-style: none;
-			}
-
-			button,
-			input,
-			optgroup,
-			select,
-			textarea {
-				font-family: inherit;
-				font-size: 100%;
-				line-height: 1.15;
-				margin: 0;
-			}
-			button,
-			input {
-				overflow: visible;
-			}
-
-			button,
-			select {
-				text-transform: none;
-			}
-
-			button,
-			[type="button"],
-			[type="reset"],
-			[type="submit"] {
-				-webkit-appearance: button;
-			}
-
-			button::-moz-focus-inner,
-			[type="button"]::-moz-focus-inner,
-			[type="reset"]::-moz-focus-inner,
-			[type="submit"]::-moz-focus-inner {
-				border-style: none;
-				padding: 0;
-			}
-
-			button:-moz-focusring,
-			[type="button"]:-moz-focusring,
-			[type="reset"]:-moz-focusring,
-			[type="submit"]:-moz-focusring {
-				outline: 1px dotted ButtonText;
-			}
-
-			fieldset {
-				padding: 0.35em 0.75em 0.625em;
-			}
-
-			legend {
-				color: inherit;
-				display: table;
-				max-width: 100%;
-				padding: 0;
-				white-space: normal;
-			}
-
-			progress {
-				vertical-align: baseline;
-			}
-
-			textarea {
-				overflow: auto;
-			}
-
-			[type="checkbox"],
-			[type="radio"] {
-				padding: 0;
-			}
-
-			[type="number"]::-webkit-inner-spin-button,
-			[type="number"]::-webkit-outer-spin-button {
-				height: auto;
-			}
-
-			[type="search"] {
-				-webkit-appearance: textfield;
-				outline-offset: -2px;
-			}
-
-			[type="search"]::-webkit-search-decoration {
-				-webkit-appearance: none;
-			}
-
-			::-webkit-file-upload-button {
-				-webkit-appearance: button;
-				font: inherit;
-			}
-
-			details {
-				display: block;
-			}
-
-			summary {
-				display: list-item;
-			}
-
-			template {
-				display: none;
-			}
-
-			[hidden] {
-				display: none;
-			}
-
 			a,
 			button {
 				cursor: pointer;
@@ -224,13 +118,34 @@ const globalStyles = (
 
 			a {
 				background-color: transparent;
-				color: ${theme.colors.primary};
+				color: ${theme.colors.grayDark};
 
 				@media (hover: hover) {
 					&:hover {
-						color: ${theme.colors.primaryDark};
+						color: ${theme.colors.primary};
 					}
 				}
+			}
+
+			p {
+				margin: 10px 0;
+
+				& a {
+					color: ${theme.colors.primary};
+
+					@media (hover: hover) {
+						&:hover {
+							color: ${theme.colors.primaryDark};
+						}
+					}
+				}
+			}
+
+			blockquote,
+			p,
+			ol,
+			ul {
+				color: ${theme.colors.gray};
 			}
 
 			figure {
@@ -256,12 +171,49 @@ const globalStyles = (
 				max-width: 100%;
 				width: auto;
 				height: auto;
+				border-style: none;
+				object-fit: contain;
 			}
 
 			strong,
 			b {
 				font-weight: 700;
 				color: ${theme.colors.dark};
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse;
+
+				& th,
+				& td {
+					text-align: left;
+					border-bottom: solid 1px ${theme.colors.grayLight};
+					padding: 5px 20px 5px 0;
+					white-space: nowrap;
+				}
+
+				& th {
+					font-size: ${theme.sizes.button.size.mobile};
+
+					${mq(Breakpoints.lg)} {
+						font-size: ${theme.sizes.button.size.desktop};
+					}
+				}
+
+				& td {
+					font-size: ${theme.sizes.text.size.mobile};
+					color: ${theme.colors.gray};
+
+					${mq(Breakpoints.lg)} {
+						font-size: ${theme.sizes.text.size.desktop};
+					}
+
+					&:first-of-type {
+						font-weight: 600;
+						color: ${theme.colors.dark};
+					}
+				}
 			}
 		`}
 	/>

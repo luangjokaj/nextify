@@ -1,21 +1,16 @@
 const theme = {
 	spacing: {
-		maxWidth: "1000px",
+		maxWidth: "1280px",
+		maxWidthLimit: "1440px",
 		paddingTopBody: { mobile: "0", desktop: "0" },
 		marginContainer: { mobile: "20px", desktop: "20px" },
 		marginRow: { default: "-10px", medium: "-30px", big: "-50px" },
 		gutterCol: { default: "10px", medium: "30px", big: "50px" },
-		printMargin: {
-			top: "15mm",
-			bottom: "15mm",
-			right: "15mm",
-			left: "15mm",
-		},
 	},
 	colors: {
-		primaryLight: "#FDA4AF",
-		primary: "#F43F5E",
-		primaryDark: "#9F1239",
+		primaryLight: "#98C7FF",
+		primary: "#0370F3",
+		primaryDark: "#003A80",
 
 		secondaryLight: "#7DD3FC",
 		secondary: "#0EA5E9",
@@ -50,7 +45,7 @@ const theme = {
 				desktop: "62px",
 			},
 			lineheight: {
-				mobile: "1.35",
+				mobile: "1.15",
 				desktop: "1.15",
 			},
 		},
@@ -60,7 +55,7 @@ const theme = {
 				desktop: "52px",
 			},
 			lineheight: {
-				mobile: "1.35",
+				mobile: "1.15",
 				desktop: "1.15",
 			},
 		},
@@ -70,7 +65,7 @@ const theme = {
 				desktop: "42px",
 			},
 			lineheight: {
-				mobile: "1.35",
+				mobile: "1.15",
 				desktop: "1.15",
 			},
 		},
@@ -80,8 +75,8 @@ const theme = {
 				desktop: "40px",
 			},
 			lineheight: {
-				mobile: "40px",
-				desktop: "50px",
+				mobile: "1.2",
+				desktop: "1.2",
 			},
 		},
 		h2: {
@@ -90,8 +85,8 @@ const theme = {
 				desktop: "32px",
 			},
 			lineheight: {
-				mobile: "1.35",
-				desktop: "42px",
+				mobile: "1.2",
+				desktop: "1.2",
 			},
 		},
 		h3: {
@@ -100,8 +95,8 @@ const theme = {
 				desktop: "28px",
 			},
 			lineheight: {
-				mobile: "28px",
-				desktop: "36px",
+				mobile: "1.2",
+				desktop: "1.2",
 			},
 		},
 		h4: {
@@ -110,8 +105,8 @@ const theme = {
 				desktop: "24px",
 			},
 			lineheight: {
-				mobile: "1.35",
-				desktop: "36px",
+				mobile: "1.3",
+				desktop: "1.3",
 			},
 		},
 		h5: {
@@ -120,8 +115,8 @@ const theme = {
 				desktop: "20px",
 			},
 			lineheight: {
-				mobile: "1.35",
-				desktop: "36px",
+				mobile: "1.4",
+				desktop: "1.4",
 			},
 		},
 		h6: {
@@ -130,8 +125,8 @@ const theme = {
 				desktop: "18px",
 			},
 			lineheight: {
-				mobile: "1.35",
-				desktop: "28px",
+				mobile: "1.4",
+				desktop: "1.4",
 			},
 		},
 		eyebrow: {
@@ -180,8 +175,8 @@ const theme = {
 				desktop: "18px",
 			},
 			lineheight: {
-				mobile: "24px",
-				desktop: "26px",
+				mobile: "1.35",
+				desktop: "1.35",
 			},
 		},
 		input: {
@@ -210,8 +205,8 @@ const theme = {
 				desktop: "16px",
 			},
 			lineheight: {
-				mobile: "24px",
-				desktop: "28px",
+				mobile: "1.5",
+				desktop: "1.5",
 			},
 		},
 		text: {
@@ -220,8 +215,8 @@ const theme = {
 				desktop: "16px",
 			},
 			lineheight: {
-				mobile: "24px",
-				desktop: "28px",
+				mobile: "1.5",
+				desktop: "1.5",
 			},
 		},
 		small: {
@@ -230,8 +225,8 @@ const theme = {
 				desktop: "14px",
 			},
 			lineheight: {
-				mobile: "1.4",
-				desktop: "1.4",
+				mobile: "1.3",
+				desktop: "1.3",
 			},
 		},
 		blockquote: {
@@ -240,8 +235,8 @@ const theme = {
 				desktop: "18px",
 			},
 			lineheight: {
-				mobile: "1.35",
-				desktop: "1.35",
+				mobile: "1.5",
+				desktop: "1.5",
 			},
 		},
 	},
