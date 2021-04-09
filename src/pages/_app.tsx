@@ -1,9 +1,15 @@
+import { useEffect, useState } from "react";
 import { ThemeProvider } from "@emotion/react";
 import Head from "next/head";
 import { globalStyles } from "../assets/styles/globalStyles";
 import { theme } from "../assets/styles/theme";
 
 function App({ Component, pageProps }) {
+	const [isLoaded, setIsLoaded] = useState(false);
+
+	useEffect(() => {
+		setIsLoaded(true);
+	}, []);
 	return (
 		<>
 			{globalStyles}
@@ -21,8 +27,7 @@ function App({ Component, pageProps }) {
 				<link
 					rel="stylesheet"
 					href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-					media="print"
-					onLoad="this.media='all'"
+					media={isLoaded ? "all" : "print"}
 				/>
 				<noscript>
 					<link
