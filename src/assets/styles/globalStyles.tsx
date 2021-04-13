@@ -1,10 +1,9 @@
 import { Global, css } from "@emotion/react";
 import { Breakpoints, mq } from "./mq";
-import { theme } from "./theme";
 
 const globalStyles = (
 	<Global
-		styles={css`
+		styles={(theme: any) => css`
 			html,
 			body {
 				margin: 0;

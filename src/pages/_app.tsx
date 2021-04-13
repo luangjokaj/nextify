@@ -12,7 +12,6 @@ function App({ Component, pageProps }) {
 	}, []);
 	return (
 		<>
-			{globalStyles}
 			<Head>
 				<link
 					rel="preconnect"
@@ -37,6 +36,7 @@ function App({ Component, pageProps }) {
 				</noscript>
 			</Head>
 			<ThemeProvider theme={theme}>
+				{globalStyles}
 				<Component {...pageProps} />
 			</ThemeProvider>
 		</>
