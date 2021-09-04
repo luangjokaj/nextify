@@ -19,7 +19,9 @@
 	],
 	"homepage": "https://www.nextify.co",
 	"repository": "https://github.com/luangjokaj/nextify",
-	"main": "index.js",
+	"exports": "./index.js",
+	"type": "module",
+	"node": "^12.20.0 || ^14.13.1 || >=16.0.0",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",

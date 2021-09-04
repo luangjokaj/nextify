@@ -2,10 +2,10 @@
  * Error handler
  */
 
-"use strict";
-
-module.exports = (err) => {
+const handleError = (err) => {
 	if (err) {
 		console.log("ERROR: " + err);
 	}
 };
+
+export { handleError };

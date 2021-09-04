@@ -2,20 +2,20 @@
  * Installation
  */
 
-const fs = require("fs");
+import fs from "fs";
+import ora from "ora";
+import execa from "execa";
+import chalk from "chalk";
+import download from "download";
+import { handleError } from "./handleError.js";
+import { clearConsole } from "./clearConsole.js";
+import { printNextSteps } from "./printNextSteps.js";
+const version = "0.0.2-4";
 const theCWD = process.cwd();
 const theCWDArray = theCWD.split("/");
 const theDir = theCWDArray[theCWDArray.length - 1];
-const ora = require("ora");
-const execa = require("execa");
-const chalk = require("chalk");
-const download = require("download");
-const handleError = require("./handleError.js");
-const clearConsole = require("./clearConsole.js");
-const printNextSteps = require("./printNextSteps.js");
-const version = require("../package.json").version;
 
-module.exports = () => {
+const run = () => {
 	// Init
 	clearConsole();
 
@@ -150,3 +150,5 @@ module.exports = () => {
 		},
 	);
 };
+
+export { run };

@@ -8,17 +8,14 @@
  * Luan Gjokaj - https://twitter.com/luangjokaj/
  */
 
-"use strict";
-
+import prompts from "prompts";
+import chalk from "chalk";
+import { program } from "commander";
+import { run } from "./modules/run.js";
+const version = "0.0.2-4";
 const currentNodeVersion = process.versions.node;
 const semver = currentNodeVersion.split(".");
 const major = semver[0];
-
-const prompts = require("prompts");
-const chalk = require("chalk");
-
-const program = require("commander");
-const version = require("../package.json").version;
 
 program
 	.version(version, "-v, --vers", "output the current version")
@@ -60,7 +57,6 @@ program
 		 *
 		 * Runs all the functions with async/await
 		 */
-		const run = require("./modules/run");
 		run();
 	}
 })();

@@ -1,6 +1,6 @@
-const chalk = require("chalk");
+import chalk from "chalk";
 
-module.exports = () => {
+const printNextSteps = () => {
 	console.log("\n\n✅ ", chalk.black.bgGreen(" All done! Happy coding. \n"));
 	console.log(
 		"Installer has added ⚡ Nextify files to the current directory.  ",
@@ -66,3 +66,5 @@ module.exports = () => {
 	);
 	process.exit();
 };
+
+export { printNextSteps };
