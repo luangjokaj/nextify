@@ -1,6 +1,6 @@
 {
 	"name": "create-nextify-app",
-	"version": "0.0.2-3",
+	"version": "0.0.2-4",
 	"description": "React apps using Next.js and Emotion.",
 	"keywords": [
 		"nextjs",
@@ -39,26 +39,26 @@
 	"dependencies": {
 		"@emotion/babel-plugin": "^11.3.0",
 		"@emotion/eslint-plugin": "^11.2.0",
-		"@emotion/react": "^11.4.0",
-		"@next/bundle-analyzer": "^11.0.0",
-		"@types/node": "^15.12.2",
-		"@types/react": "^17.0.11",
-		"@types/react-dom": "^17.0.7",
-		"@typescript-eslint/eslint-plugin": "^4.27.0",
-		"@typescript-eslint/parser": "^4.27.0",
+		"@emotion/react": "^11.4.1",
+		"@next/bundle-analyzer": "^11.1.2",
+		"@types/node": "^16.7.10",
+		"@types/react": "^17.0.19",
+		"@types/react-dom": "^17.0.9",
+		"@typescript-eslint/eslint-plugin": "^4.30.0",
+		"@typescript-eslint/parser": "^4.30.0",
 		"babel-eslint": "^10.1.0",
 		"cherry-components": "^0.0.2-11",
-		"eslint": "^7.28.0",
-		"eslint-config-next": "^11.0.0",
-		"eslint-plugin-prettier": "^3.4.0",
-		"eslint-plugin-react": "^7.24.0",
+		"eslint": "^7.32.0",
+		"eslint-config-next": "^11.1.2",
+		"eslint-plugin-prettier": "^4.0.0",
+		"eslint-plugin-react": "^7.25.1",
 		"eslint-plugin-react-hooks": "^4.2.0",
 		"express": "^4.17.1",
-		"next": "^11.0.0",
+		"next": "^11.1.2",
 		"next-compose-plugins": "^2.2.1",
-		"prettier": "^2.3.1",
+		"prettier": "^2.3.2",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
-		"typescript": "^4.3.2"
+		"typescript": "^4.4.2"
 	}
 }
