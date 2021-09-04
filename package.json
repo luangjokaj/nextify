@@ -19,7 +19,9 @@
 	],
 	"homepage": "https://www.nextify.co",
 	"repository": "https://github.com/luangjokaj/nextify",
-	"main": "./installer/index.js",
+	"main": "./index.js",
+	"type": "module",
+	"node": "^12.20.0 || ^14.13.1 || >=16.0.0",
 	"bin": {
 		"create-nextify-app": "./installer/index.js"
 	},
