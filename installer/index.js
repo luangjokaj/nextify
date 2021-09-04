@@ -11,8 +11,13 @@
 import prompts from "prompts";
 import chalk from "chalk";
 import { program } from "commander";
+import { createRequire } from "module";
 import { run } from "./modules/run.js";
-const version = "0.0.2-4";
+
+const require = createRequire(import.meta.url);
+const packageData = require("./package.json");
+
+const version = packageData.version;
 const currentNodeVersion = process.versions.node;
 const semver = currentNodeVersion.split(".");
 const major = semver[0];
@@ -31,14 +36,14 @@ program
 	});
 
 	if (response.value) {
-		// If below Node 8
-		if (8 > major) {
+		// If below Node 12
+		if (12 > major) {
 			console.error(
 				chalk.red(
 					"You are running Node " +
 						currentNodeVersion +
 						".\n" +
-						"Install Nextify requires Node 8 or higher. \n" +
+						"Install Nextify requires Node 12 or higher. \n" +
 						"Kindly, update your version of Node.",
 				),
 			);

@@ -7,10 +7,16 @@ import ora from "ora";
 import execa from "execa";
 import chalk from "chalk";
 import download from "download";
+import { createRequire } from "module";
 import { handleError } from "./handleError.js";
 import { clearConsole } from "./clearConsole.js";
 import { printNextSteps } from "./printNextSteps.js";
-const version = "0.0.2-4";
+
+const require = createRequire(import.meta.url);
+const packageData = require("../package.json");
+
+const version = packageData.version;
+
 const theCWD = process.cwd();
 const theCWDArray = theCWD.split("/");
 const theDir = theCWDArray[theCWDArray.length - 1];
