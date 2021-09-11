@@ -15,7 +15,7 @@ import { createRequire } from "module";
 import { run } from "./modules/run.js";
 
 const require = createRequire(import.meta.url);
-const packageData = require("./package.json");
+const packageData = require("./packages/package.json");
 
 const version = packageData.version;
 const currentNodeVersion = process.versions.node;
