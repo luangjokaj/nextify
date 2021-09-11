@@ -37,7 +37,7 @@ const run = () => {
 		`${upstreamUrl}/LICENSE`,
 		`${upstreamUrl}/next.config.js`,
 		`${upstreamUrl}/now.json`,
-		`${upstreamUrl}/installer/package/package.json`,
+		`${upstreamUrl}/installer/packages/package.json`,
 		`${upstreamUrl}/README.md`,
 		`${upstreamUrl}/tsconfig.json`,
 
