@@ -31,7 +31,6 @@ const run = () => {
 	const filesToDownload = [
 		`${upstreamUrl}/.babelrc`,
 		`${upstreamUrl}/.editorconfig`,
-		`${upstreamUrl}/.eslintrc`,
 		`${upstreamUrl}/.gitignore`,
 		`${upstreamUrl}/.prettierrc`,
 		`${upstreamUrl}/LICENSE`,
@@ -62,7 +61,6 @@ const run = () => {
 	const dotFiles = [
 		".babelrc",
 		".editorconfig",
-		".eslintrc",
 		".gitignore",
 		".prettierrc",
 	];
