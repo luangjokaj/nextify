@@ -4,7 +4,7 @@
 
 import fs from "fs";
 import ora from "ora";
-import execa from "execa";
+import { execa } from "execa";
 import chalk from "chalk";
 import download from "download";
 import { createRequire } from "module";
@@ -58,12 +58,7 @@ const run = () => {
 	];
 
 	// Organise file structure
-	const dotFiles = [
-		".babelrc",
-		".editorconfig",
-		".gitignore",
-		".prettierrc",
-	];
+	const dotFiles = [".babelrc", ".editorconfig", ".gitignore", ".prettierrc"];
 	const publicFiles = ["robots.txt", "site.webmanifest"];
 	const stylesFiles = ["globalStyles.tsx", "mq.ts", "theme.ts"];
 	const svgFiles = ["Logo.tsx"];

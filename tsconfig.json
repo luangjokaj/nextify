@@ -14,7 +14,8 @@
 		"isolatedModules": true,
 		"jsx": "preserve",
 		"types": ["@emotion/react/types/css-prop"],
-		"baseUrl": "./src"
+		"baseUrl": "./src",
+		"incremental": true
 	},
 	"include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"],
 	"exclude": ["node_modules"]
