@@ -1,4 +1,5 @@
-const breakpoints = [0, 576, 768, 992, 1200, 1440, 1920];
+import { theme } from "./theme";
+const breakpoints = theme.spacing.breakpoints;
 
 const Breakpoints = {
 	xs: 0,

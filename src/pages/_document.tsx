@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Html, Head, Main, NextScript } from "next/document";
 
 function Document() {
-	const [isLoaded, setIsLoaded] = useState(false);
-	useEffect(() => {
-		setIsLoaded(true);
-	}, []);
 	return (
 		<Html>
 			<Head>
@@ -22,7 +18,7 @@ function Document() {
 				<link
 					rel="stylesheet"
 					href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-					media={isLoaded ? "all" : "print"}
+					media="all"
 				/>
 				<noscript>
 					<link
