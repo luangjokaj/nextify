@@ -29,7 +29,6 @@ const run = () => {
 
 	// Files
 	const filesToDownload = [
-		`${upstreamUrl}/.babelrc`,
 		`${upstreamUrl}/.editorconfig`,
 		`${upstreamUrl}/.gitignore`,
 		`${upstreamUrl}/.prettierrc`,
@@ -57,7 +56,7 @@ const run = () => {
 	];
 
 	// Organise file structure
-	const dotFiles = [".babelrc", ".editorconfig", ".gitignore", ".prettierrc"];
+	const dotFiles = [".editorconfig", ".gitignore", ".prettierrc"];
 	const publicFiles = ["robots.txt", "site.webmanifest"];
 	const stylesFiles = ["globalStyles.tsx", "mq.ts", "theme.ts"];
 	const svgFiles = ["Logo.tsx"];
