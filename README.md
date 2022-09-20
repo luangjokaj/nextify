@@ -1,4 +1,4 @@
-# [![Nextify Logo](https://nextify.s3-eu-west-1.amazonaws.com/img/nextify-repository-logo.svg#0)](https://www.nextify.me/)
+# [![Nextify Logo](https://nextify.s3-eu-west-1.amazonaws.com/img/nextify-repository-logo.svg#1)](https://www.nextify.me/)
 
 [![Version](https://img.shields.io/github/package-json/v/luangjokaj/nextify)](https://www.fuzzymail.co/)
 
