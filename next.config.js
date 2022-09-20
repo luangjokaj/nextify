@@ -2,8 +2,7 @@ const withBundleAnalyzer = require("@next/bundle-analyzer");
 
 const config = {
 	compiler: {
-		emotion:
-			true
+		emotion: true,
 	},
 };
 
@@ -12,6 +11,6 @@ const bundleAnalyzer = withBundleAnalyzer({
 });
 
 module.exports = (_phase, { defaultConfig }) => {
-	const plugins = [bundleAnalyzer]
-	return plugins.reduce((acc, plugin) => plugin(acc), { ...config })
-}
+	const plugins = [bundleAnalyzer];
+	return plugins.reduce((acc, plugin) => plugin(acc), { ...config });
+};
