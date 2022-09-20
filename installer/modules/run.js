@@ -35,7 +35,6 @@ const run = () => {
 		`${upstreamUrl}/.prettierrc`,
 		`${upstreamUrl}/LICENSE`,
 		`${upstreamUrl}/next.config.js`,
-		`${upstreamUrl}/now.json`,
 		`${upstreamUrl}/installer/packages/package.json`,
 		`${upstreamUrl}/README.md`,
 		`${upstreamUrl}/tsconfig.json`,
