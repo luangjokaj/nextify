@@ -42,7 +42,7 @@
 		"@types/node": "^18.7.18",
 		"@types/react": "^18.0.20",
 		"@types/react-dom": "^18.0.6",
-		"cherry-components": "^0.0.2-17",
+		"cherry-components": "^0.0.2-18",
 		"express": "^4.18.1",
 		"next": "^12.3.1",
 		"prettier": "^2.7.1",
