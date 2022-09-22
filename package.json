@@ -1,6 +1,6 @@
 {
 	"name": "create-nextify-app",
-	"version": "0.0.2-16",
+	"version": "0.0.2-17",
 	"description": "React apps using Next.js and Emotion.",
 	"keywords": [
 		"nextjs",
