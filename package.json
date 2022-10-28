@@ -1,6 +1,6 @@
 {
 	"name": "create-nextify-app",
-	"version": "0.0.2-17",
+	"version": "0.0.2-18",
 	"description": "React apps using Next.js and Emotion.",
 	"keywords": [
 		"nextjs",
@@ -28,8 +28,8 @@
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"chalk": "^5.0.1",
-		"commander": "^9.4.0",
+		"chalk": "^5.1.2",
+		"commander": "^9.4.1",
 		"download": "^8.0.0",
 		"execa": "^6.1.0",
 		"ora": "^6.1.2",

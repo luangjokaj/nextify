@@ -1,6 +1,6 @@
 {
 	"name": "create-nextify-app",
-	"version": "0.0.2-17",
+	"version": "0.0.2-18",
 	"description": "React apps using Next.js and Emotion.",
 	"keywords": [
 		"nextjs",
@@ -36,18 +36,18 @@
 	"author": "Luan Gjokaj <luan@riangle.com>",
 	"license": "MIT",
 	"dependencies": {
-		"@emotion/babel-plugin": "^11.10.2",
-		"@emotion/react": "^11.10.4",
-		"@next/bundle-analyzer": "^12.3.1",
-		"@types/node": "^18.7.18",
-		"@types/react": "^18.0.20",
-		"@types/react-dom": "^18.0.6",
+		"@emotion/babel-plugin": "^11.10.5",
+		"@emotion/react": "^11.10.5",
+		"@next/bundle-analyzer": "^13.0.0",
+		"@types/node": "^18.11.7",
+		"@types/react": "^18.0.24",
+		"@types/react-dom": "^18.0.8",
 		"cherry-components": "^0.0.2-18",
-		"express": "^4.18.1",
-		"next": "^12.3.1",
+		"express": "^4.18.2",
+		"next": "^13.0.0",
 		"prettier": "^2.7.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
-		"typescript": "^4.8.3"
+		"typescript": "^4.8.4"
 	}
 }
