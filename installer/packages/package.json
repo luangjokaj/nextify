@@ -1,6 +1,6 @@
 {
 	"name": "create-nextify-app",
-	"version": "0.0.2-18",
+	"version": "0.0.2-19",
 	"description": "React apps using Next.js and Emotion.",
 	"keywords": [
 		"nextjs",
@@ -38,13 +38,13 @@
 	"dependencies": {
 		"@emotion/babel-plugin": "^11.10.5",
 		"@emotion/react": "^11.10.5",
-		"@next/bundle-analyzer": "^13.0.0",
-		"@types/node": "^18.11.7",
-		"@types/react": "^18.0.24",
-		"@types/react-dom": "^18.0.8",
-		"cherry-components": "^0.0.2-18",
+		"@next/bundle-analyzer": "^13.0.3",
+		"@types/node": "^18.11.9",
+		"@types/react": "^18.0.25",
+		"@types/react-dom": "^18.0.9",
+		"cherry-components": "^0.0.2-19",
 		"express": "^4.18.2",
-		"next": "^13.0.0",
+		"next": "^13.0.3",
 		"prettier": "^2.7.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
