@@ -139,7 +139,7 @@ const run = () => {
 
 			// The npm install
 			spinner.start("2. Installing npm packages...");
-			await execa("npm", ["install --force"]);
+			await execa("npm", ["install"]);
 			spinner.succeed();
 
 			// Done
